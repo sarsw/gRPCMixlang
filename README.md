@@ -21,4 +21,4 @@ Folder structure :
 |______CMakeLists.txt
 ```
 See the [C++ Readme](CPPreadme.txt) for C++ build details.
-To compile and run the c# app use `dotnet run`
+To compile and run the c# app use `dotnet run` from the DotNetClient folder.
