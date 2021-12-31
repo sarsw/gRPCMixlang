@@ -1,0 +1,4 @@
+C:/src/gRPCDemo/build/CMakeFiles/server.dir
+C:/src/gRPCDemo/build/CMakeFiles/client.dir
+C:/src/gRPCDemo/build/CMakeFiles/ALL_BUILD.dir
+C:/src/gRPCDemo/build/CMakeFiles/ZERO_CHECK.dir
