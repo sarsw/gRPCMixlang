@@ -4,7 +4,7 @@ Exercise with clients and server C++ gRPC comms using VCpkg, Cmake and VSCode.
 
 C++ folder structure & build process :
 
-`project
+```project
 |______build
 |______proto
 | |______helloworld.proto
@@ -21,4 +21,4 @@ cd build
 
 cmake -G "Visual Studio 16 2019" ../ -DCMAKE_TOOLCHAIN_FILE=c:\src\vcpkg\scripts\buildsystems\vcpkg.cmake
 
-cmake --build .`
+cmake --build .```
