@@ -1,24 +1,23 @@
 ﻿# gRPC Mixed Language
 
-Exercise with clients and server C++ gRPC comms using VCpkg, Cmake and VSCode.
+Exercise with HelloWorld gRPC client and server in C++ with a C# client.  C++ was managed via vcpkg and built using cmake. VSCode was the ide of choice with VS 2019 as the compiler.
 
-C++ folder structure & build process :
+## Prerequisites
+1. [Install VCPKG](https://vcpkg.io/en/getting-started.html). I installed it under c:\src\vcpkg and added it to PATH 
+2. Get VS2019 (Community edition will be ok)
+3. Get VSCode
+
+Folder structure :
 
 ```project
 |______build
 |______proto
 | |______helloworld.proto
 |
+|______DotNetClient
 |______src
 | |______server.cpp
 | |______client.cpp
 |______CMakeLists.txt
-
-cd proto
-protoc -I. --cpp_out=. helloworld.proto 
-protoc -I. --grpc_out=. --plugin=protoc-gen-grpc="c:\src\vcpkg\packages\grpc_x64-windows\tools\grpc\grpc_cpp_plugin.exe" helloworld.proto
-cd build
-
-cmake -G "Visual Studio 16 2019" ../ -DCMAKE_TOOLCHAIN_FILE=c:\src\vcpkg\scripts\buildsystems\vcpkg.cmake
-
-cmake --build .```
+```
+See the [C++ Readme](CPPreadme.txt) for C++ build details.
