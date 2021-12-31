@@ -8,10 +8,14 @@ project
 | |______client.cpp
 |______CMakeLists.txt
 
-##C++ build process:
+C++ build process:
 
+## get the packages
 vcpkg install grpc:x86-windows
 vcpkg install protobuf protobuf:x86-windows
+vcpkg integrate install   ## get vcpkg integrated into VS (optional I think)
+
+At a command terminal:
 
 cd proto
 protoc -I. --cpp_out=. helloworld.proto 
